@@ -9,7 +9,8 @@ export const CountReducer = createSlice({
         increment: (state) => {
             state.count++;
         }
-    }
+    },
+    extraReducers: {}
 });
 
 export default CountReducer.reducer
