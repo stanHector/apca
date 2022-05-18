@@ -11,7 +11,6 @@ const App = (props) => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-6 offset-md-3">
-                    {/* <h2 className="text-center text-dark mt-5" style={{ fontFamily: "monospace", fontWeight: "bold" }} >Enter Login</h2> */}
                         <div className="card my-5">
                         <form className="card-body cardbody-color p-lg-5">
                                 <div className="text-center">
@@ -29,7 +28,6 @@ const App = (props) => {
                                 <div className="text-center">
                                     <button type="submit" className="btn btn-color" style={{backgroundColor:"#77457F", fontWeight:"bold", color:"white", height:"50px"}}>Login</button>
                                 </div>
-                            
                             </form>
                         </div>
                     </div>
