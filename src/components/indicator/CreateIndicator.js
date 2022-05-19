@@ -87,30 +87,31 @@ const CreateIndicator = () => {
                       </div>
 
                       <div className="row">
-                        <div className="col-md-12">
+                        <div className="col-md-6">
                           <div className="form-group">
                             <label style={{ fontWeight: "bold" }}>Total SAR 2015/2016 *</label>
                             <input type="number" name="total-sar-2015/2016" className="form-control" required="required" data-error="" />
                           </div>
                         </div>
 
-                        <div className="col-md-12">
+                        <div className="col-md-6">
                           <div className="form-group">
                             <label style={{ fontWeight: "bold" }}>Total SAR 2014/2015 *</label>
                             <input type="number" name="total-sar-2014/2015" className="form-control" required="required" data-error="" />
                           </div>
                         </div>
 
-                        <div className="col-md-12">
+                        
+                      </div>
+
+                      <div className="row">
+                      <div className="col-md-6">
                           <div className="form-group">
                             <label style={{ fontWeight: "bold" }}>Total SAR 2013/2014 *</label>
                             <input type="number" name="total-sar-2013/2014" className="form-control" required="required" data-error="" />
                           </div>
                         </div>
-                      </div>
-
-                      <div className="row">
-                        <div className="col-md-12">
+                        <div className="col-md-6">
                           <div className="form-group">
                             <label style={{ fontWeight: "bold" }}>Total SAR 2012/2013 *</label>
                             <input type="number" name="total-sar-2012/2013" className="form-control" required="required" data-error="" />

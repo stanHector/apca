@@ -7,7 +7,7 @@
     z-index: 999;
 }
 .topbarWrapper{
-    height: 80px;
+    height: 40px;
     display: flex;
     justify-content: space-between;
     background-color:   #694977 ;
@@ -45,6 +45,6 @@
 .topAvatar{
     margin-left: 10px;
     margin-bottom: 8px;
-    height: 80px;
+    height: 40px;
     border-radius: 12px;
 }

@@ -18,7 +18,7 @@ const Education = () => {
                                             {/* <p style={{ color: "#A355AF", fontSize: "13px" }}>To provide leadership and coordination for palliative care integration into health policies, education programmes and health services in Africa</p> */}
 
                                             <div className='row'>
-                                                <div className="col-sd-6">
+                                                <div className="col-sd-12">
                                                     <div className="form-group">
                                                         <label style={{ fontWeight: "bold" }}>Fiscal Year Period</label>
                                                         <select name="need" className="form-control" required="required" data-error="">
@@ -29,7 +29,7 @@ const Education = () => {
                                                     </div>
                                                 </div>
 
-                                                <div className="col-sd-6">
+                                                <div className="col-sd-12">
                                                     <div className="form-group">
                                                         <label style={{ fontWeight: "bold" }}>Education</label>
                                                         <select name="need" className="form-control" required="required" data-error="">
@@ -89,36 +89,38 @@ const Education = () => {
                                             </div>
 
                                             <div className="row">
-                                                <div className="col-md-12">
+                                                <div className="col-md-6">
                                                     <div className="form-group">
                                                         <label style={{ fontWeight: "bold" }}>Total SAR 2015/2016 *</label>
                                                         <input type="number" name="total-sar-2015/2016" className="form-control" required="required" data-error="" />
                                                     </div>
                                                 </div>
 
-                                                <div className="col-md-12">
+                                                <div className="col-md-6">
                                                     <div className="form-group">
                                                         <label style={{ fontWeight: "bold" }}>Total SAR 2014/2015 *</label>
                                                         <input type="number" name="total-sar-2014/2015" className="form-control" required="required" data-error="" />
                                                     </div>
                                                 </div>
 
-                                                <div className="col-md-12">
+
+                                            </div>
+
+                                            <div className="row">
+                                                <div className="col-md-6">
                                                     <div className="form-group">
                                                         <label style={{ fontWeight: "bold" }}>Total SAR 2013/2014 *</label>
                                                         <input type="number" name="total-sar-2013/2014" className="form-control" required="required" data-error="" />
                                                     </div>
                                                 </div>
-                                            </div>
-
-                                            <div className="row">
-                                                <div className="col-md-12">
+                                                <div className="col-md-6">
                                                     <div className="form-group">
                                                         <label style={{ fontWeight: "bold" }}>Total SAR 2012/2013 *</label>
                                                         <input type="number" name="total-sar-2012/2013" className="form-control" required="required" data-error="" />
                                                     </div>
                                                 </div>
-
+                                            </div>
+                                            <div className='row'>
                                                 <div className="col-md-12">
                                                     <div className="form-group">
                                                         <label style={{ fontWeight: "bold" }}>Total SAR 2011/2012 *</label>
