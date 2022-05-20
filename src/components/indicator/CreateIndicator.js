@@ -87,6 +87,15 @@ const CreateIndicator = () => {
                       </div>
 
                       <div className="row">
+                        <div className="col-md-12">
+                          <div className="form-group">
+                            <label style={{ fontWeight: "bold" }}>Remark *</label>
+                            <input type="text" name="total-sar-2015/2016" className="form-control" required="required" data-error="" />
+                          </div>
+                        </div>
+                        </div>
+
+                      <div className="row">
                         <div className="col-md-6">
                           <div className="form-group">
                             <label style={{ fontWeight: "bold" }}>Total SAR 2015/2016 *</label>
@@ -100,17 +109,16 @@ const CreateIndicator = () => {
                             <input type="number" name="total-sar-2014/2015" className="form-control" required="required" data-error="" />
                           </div>
                         </div>
-
-                        
                       </div>
 
                       <div className="row">
-                      <div className="col-md-6">
+                        <div className="col-md-6">
                           <div className="form-group">
                             <label style={{ fontWeight: "bold" }}>Total SAR 2013/2014 *</label>
                             <input type="number" name="total-sar-2013/2014" className="form-control" required="required" data-error="" />
                           </div>
                         </div>
+
                         <div className="col-md-6">
                           <div className="form-group">
                             <label style={{ fontWeight: "bold" }}>Total SAR 2012/2013 *</label>
@@ -129,7 +137,7 @@ const CreateIndicator = () => {
                       <div className="row">
                         <div className="col-md-12">
                           <div className="form-group">
-                            <label style={{ fontWeight: "bold" }}>Total Cummulative -5 Year Period *</label>
+                            <label style={{ fontWeight: "bold" }}>Total Cummulative-5 Year Period *</label>
                             <input type="number" name="cummulative" className="form-control" required="required" data-error="" />
                           </div>
                         </div>
