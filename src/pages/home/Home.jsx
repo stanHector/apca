@@ -1,5 +1,5 @@
 // import React from 'react';
-// import FeatureInfo from '../../components/featuredInfo/FeatureInfo';
+import FeatureInfo from '../../components/featuredInfo/FeatureInfo';
 // import './home.css';
 // import WidgetSm from '../components/widgetSm/WidgetSm'
 // import WidgetLg from '../../components/widgetLg/WidgetLg'
@@ -15,9 +15,9 @@ const Home = () => {
 
   return (
     <Container>
-      home
-      {/* <FeatureInfo allAssets={allAssets} isLoading={isLoading} items={items} />
-                <WidgetLg assets={assets} isLoading={isLoading} />
+      {/* home */}
+      <FeatureInfo />
+                {/* <WidgetLg assets={assets} isLoading={isLoading} />
                 <WidgetSm /> */}
     </Container>
   );
