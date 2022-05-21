@@ -6,6 +6,7 @@ import {
   CreateIndicator,
   Home,
   ProtectedRoutes,
+  ServiceDelivery,
 } from "./export";
 
 function App() {
@@ -18,14 +19,12 @@ function App() {
       {/* <TopNav /> */}
       <Routes>
         <Route path="login" element={<Login setUser={setUser} />} />
-        <Route
-          path="/"
-          element={<ProtectedRoutes user={user}>
+        <Route path="/" element={<ProtectedRoutes user={user}>
             <Layout />
-          </ProtectedRoutes>
-          }>
+          </ProtectedRoutes> }>
           <Route index element={<Home />} />
           <Route path="/indicator" element={<CreateIndicator />} />
+          <Route path="/service" element={<ServiceDelivery />} />
           <Route path="*" element={<h1>Not found</h1>} />
         </Route>
       </Routes>

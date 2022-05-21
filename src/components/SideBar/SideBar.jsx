@@ -34,13 +34,16 @@ const Container = styled.nav`
 
 const SideBar = () => {
   return (
-    <Container>
-      <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>Home</NavLink>
-      <NavLink to="/indicator" className={({ isActive }) => (isActive ? "active" : "")}>Indicator</NavLink>
-      <NavLink to="/product">Product</NavLink>
-      <NavLink to="/settings">Settings</NavLink>
-
-    </Container>
+    <React.Fragment>
+      <Container>
+        <label>Dashboard</label>
+        <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>Home</NavLink>
+        <NavLink to="/indicator" className={({ isActive }) => (isActive ? "active" : "")}>Indicator</NavLink>
+        <NavLink to="/service" className={({ isActive }) => (isActive ? "active" : "")}>Service Delivery</NavLink>
+        <NavLink to="/product">Product</NavLink>
+        <NavLink to="/settings">Settings</NavLink>
+      </Container>
+    </React.Fragment>
   );
 };
 
