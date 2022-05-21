@@ -39,7 +39,7 @@ const ServiceDelivery = () => {
                           <div className="form-group">
                             <label style={{ fontWeight: "bold" }}>Service Delivery</label>
                             <select name="need" className="form-control" required="required" data-error="">
-                              <option value="" selected disabled>--Select service Delivery--</option>
+                              <option value="" selected disabled>--Select Service Delivery--</option>
                               <option>Number of supported health faciilities with established PC services</option>
                               <option>Number of PC patients provided with/accessing PC services</option>
                               <option>Number of PC referrals done</option>

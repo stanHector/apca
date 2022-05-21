@@ -12,7 +12,7 @@ const Education = () => {
     <div className="container">
       <div className="row ">
         <div className=" text-center mt-5 ">
-          <h1 style={{ fontWeight: "bold" }}>Education</h1>
+          <h1>Education</h1>
         </div>
 
         <div className="col-lg-9 mx-auto">

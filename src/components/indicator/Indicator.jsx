@@ -12,7 +12,7 @@ const Indicator = () => {
       <div className="container">
         <div className="row ">
           <div className=" text-center mt-5 ">
-            <h1 style={{ fontWeight: "bold" }}>Indicator</h1>
+            <h1>Indicator</h1>
           </div>
 
           <div className="col-lg-9 mx-auto">

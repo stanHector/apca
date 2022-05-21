@@ -37,22 +37,22 @@ const Container = styled.nav`
 const SideBar = () => {
   return (
     <React.Fragment>
-   
-      {/* <div className="container" style={{marginTop:"50px"}}> */}
-        <Container>
-        <label style={{fontWeight:"bold", marginTop:"12px", margin: "20px", fontSize:"40px"}}>Dashboard</label>
-        
-          <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")} style={{margin:"10px"}}>Home</NavLink>
-          <NavLink to="/indicator" className={({ isActive }) => (isActive ? "active" : "")}style={{margin:"10px"}}>Indicator</NavLink>
-          <NavLink to="/service" className={({ isActive }) => (isActive ? "active" : "")}style={{margin:"10px"}}>Service Delivery</NavLink>
-          <NavLink to="/education" className={({ isActive }) => (isActive ? "active" : "")}style={{margin:"10px"}}>Education</NavLink>
-          <NavLink to="/policy" className={({ isActive }) => (isActive ? "active" : "")}style={{margin:"10px"}}>Policy</NavLink>
-          <NavLink to="/product"style={{margin:"10px"}}>Product</NavLink>
-          <NavLink to="/settings"style={{margin:"10px"}}>Settings</NavLink>
-          
-        </Container>
-        {/* </div> */}
-     
+      <Container>
+        <label style={{ fontWeight: "bold", marginTop: "12px", margin: "20px", textDecoration: "underline", color: "#694977", fontSize: "40px" }}>Dashboard</label>
+        <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Home</NavLink>
+        <NavLink to="/indicator" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Indicator</NavLink>
+        <NavLink to="/service" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Service Delivery</NavLink>
+        <NavLink to="/policy" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Policy</NavLink>
+        <NavLink to="/education" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Education</NavLink>
+        <NavLink to="/medi-tech" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Medication And Technologies</NavLink>
+        <NavLink to="/africa-palliative" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>A functional African palliative care research network in place</NavLink>
+        {/* <NavLink to="/product" style={{ margin: "10px" }}>Product</NavLink>
+        <NavLink to="/settings" style={{ margin: "10px" }}>Settings</NavLink> */}
+        <NavLink to="/login" style={{ margin: "10px" }}>Logout</NavLink>
+
+      </Container>
+      {/* </div> */}
+
     </React.Fragment>
   );
 };

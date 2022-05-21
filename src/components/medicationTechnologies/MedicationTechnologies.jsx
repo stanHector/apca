@@ -6,7 +6,7 @@ const Container = styled.div`
   ${PageSytles}
 `;
 
-const Policy = () => {
+const MedicationTechnologies = () => {
 
   return (
     <Container>
@@ -15,7 +15,7 @@ const Policy = () => {
 
           <div className="row ">
             <div className=" text-center mt-5 ">
-              <h1>Policy</h1>
+              <h1>Medication And Technologies</h1>
             </div>
             <div className="col-lg-9 mx-auto">
               <div className="card mt-2 mx-auto p-4 bg-light">
@@ -36,15 +36,14 @@ const Policy = () => {
 
                         <div className="col-sd-12">
                           <div className="form-group">
-                            <label style={{ fontWeight: "bold" }}>Policy</label>
+                            <label style={{ fontWeight: "bold" }}>Medication And Technologies</label>
                             <select name="need" className="form-control" required="required" data-error="">
-                              <option value="" selected disabled>--Select Policy--</option>
-                              <option>Number of targeted countries with PC integrated/recognized into national frameworks/health plans /stand alone</option>
-                              <option>Number of palliative care advocacy activities/meetings conducted to integrate PC into health policies and guidelines.</option>
-                              <option>Number of people who attended policy related activities/meetings </option>
-                              <option>Number of countries with  active national PC advocacy teams</option>
-                              <option>Number of countries including  PC indicators into national HMIS</option>
-                              <option>Number of countries that conducted a national PC situational analysis during this period</option>
+                              <option value="" selected disabled>--Select Medication & Technologies--</option>
+                              <option>Number of legal prescribers trained on palliative care medications and opioids</option>
+                              <option>Number of countries with essential  PC medications included on the national essential medicines list/policy/guidelines during this period</option>
+                              <option>Number of African countries submitting annual returns for morphine</option>
+                              <option>Number of people accessing palliative care medications</option>
+                              <option>Number of equipment purchased (capital improvement)</option>
                             </select>
                           </div>
                         </div>
@@ -165,4 +164,4 @@ const Policy = () => {
   )
 }
 
-export default Policy;
+export default MedicationTechnologies;

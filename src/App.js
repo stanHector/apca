@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Routes, Route, useLocation } from "react-router-dom";
+import { AfricanPalliativeCare } from './components/africanPalliativeCare/AfricanPalliativeCare';
 import {
   Login,
   Layout,
@@ -7,8 +8,11 @@ import {
   Home,
   ServiceDelivery,
   Policy,
-  ProtectedRoutes,
   Education,
+  MedicationTechnologies,
+  ProtectedRoutes,
+  // AfricanPalliativeCare,
+  
 } from "./export";
 
 function App() {
@@ -27,9 +31,11 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/indicator" element={<CreateIndicator />} />
           <Route path="/service" element={<ServiceDelivery />} />
-          <Route path="/education" element={<Education/>}/>
-          {/* <Route path="africa-palliative" element={<AfricanPalliativeCare/>}/> */}
           <Route path="/policy" element={<Policy />} />
+          <Route path="medi-tech" element={<MedicationTechnologies/>}/>
+          <Route path="/education" element={<Education/>}/>
+          <Route path="/africa-palliative" element={<AfricanPalliativeCare/>}/>
+          
           <Route path="*" element={<h1>Not found</h1>} />
         </Route>
       </Routes>
