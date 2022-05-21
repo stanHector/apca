@@ -4,8 +4,8 @@
 // import WidgetSm from '../components/widgetSm/WidgetSm'
 // import WidgetLg from '../../components/widgetLg/WidgetLg'
 // import Topbar from "../../components/topbar/Topbar"
-import { PageSytles } from "../../styles/globalStyles";
 import styled from "styled-components";
+import { PageSytles } from "../../styles/globalStyles";
 
 const Container = styled.div`
   ${PageSytles}

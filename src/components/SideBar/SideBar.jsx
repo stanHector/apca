@@ -1,3 +1,4 @@
+import { Label } from "@material-ui/icons";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
@@ -29,20 +30,29 @@ const Container = styled.nav`
     left: 0;
   
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
+    // padding-top: 20px;
+    margin-top:50px;
 `;
 
 const SideBar = () => {
   return (
     <React.Fragment>
-      <Container>
-        <label>Dashboard</label>
-        <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>Home</NavLink>
-        <NavLink to="/indicator" className={({ isActive }) => (isActive ? "active" : "")}>Indicator</NavLink>
-        <NavLink to="/service" className={({ isActive }) => (isActive ? "active" : "")}>Service Delivery</NavLink>
-        <NavLink to="/product">Product</NavLink>
-        <NavLink to="/settings">Settings</NavLink>
-      </Container>
+   
+      {/* <div className="container" style={{marginTop:"50px"}}> */}
+        <Container>
+        <label style={{fontWeight:"bold", marginTop:"12px", margin: "20px", fontSize:"40px"}}>Dashboard</label>
+        
+          <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")} style={{margin:"10px"}}>Home</NavLink>
+          <NavLink to="/indicator" className={({ isActive }) => (isActive ? "active" : "")}style={{margin:"10px"}}>Indicator</NavLink>
+          <NavLink to="/service" className={({ isActive }) => (isActive ? "active" : "")}style={{margin:"10px"}}>Service Delivery</NavLink>
+          <NavLink to="/education" className={({ isActive }) => (isActive ? "active" : "")}style={{margin:"10px"}}>Education</NavLink>
+          <NavLink to="/policy" className={({ isActive }) => (isActive ? "active" : "")}style={{margin:"10px"}}>Policy</NavLink>
+          <NavLink to="/product"style={{margin:"10px"}}>Product</NavLink>
+          <NavLink to="/settings"style={{margin:"10px"}}>Settings</NavLink>
+          
+        </Container>
+        {/* </div> */}
+     
     </React.Fragment>
   );
 };

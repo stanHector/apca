@@ -5,8 +5,10 @@ import {
   Layout,
   CreateIndicator,
   Home,
-  ProtectedRoutes,
   ServiceDelivery,
+  Policy,
+  ProtectedRoutes,
+  Education,
 } from "./export";
 
 function App() {
@@ -25,6 +27,9 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/indicator" element={<CreateIndicator />} />
           <Route path="/service" element={<ServiceDelivery />} />
+          <Route path="/education" element={<Education/>}/>
+          {/* <Route path="africa-palliative" element={<AfricanPalliativeCare/>}/> */}
+          <Route path="/policy" element={<Policy />} />
           <Route path="*" element={<h1>Not found</h1>} />
         </Route>
       </Routes>

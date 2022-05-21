@@ -6,7 +6,7 @@ const Container = styled.div`
   ${PageSytles}
 `;
 
-const ServiceDelivery = () => {
+const Policy = () => {
 
   return (
     <Container>
@@ -15,7 +15,7 @@ const ServiceDelivery = () => {
 
           <div className="row ">
             <div className=" text-center mt-5 ">
-              <h1>Service Delivery</h1>
+              <h1>Policy</h1>
             </div>
             <div className="col-lg-9 mx-auto">
               <div className="card mt-2 mx-auto p-4 bg-light">
@@ -163,4 +163,4 @@ const ServiceDelivery = () => {
   )
 }
 
-export default ServiceDelivery;
+export default Policy;
