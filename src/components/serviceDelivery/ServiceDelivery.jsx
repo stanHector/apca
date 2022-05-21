@@ -88,6 +88,18 @@ const ServiceDelivery = () => {
                           </div>
                         </div>
 
+
+                        <div className="col-sd-12">
+                          <div className="form-group">
+                            <label style={{ fontWeight: "bold" }}>Remarks</label>
+                            <select name="need" className="form-control" required="required" data-error="">
+                              <option value="" selected disabled>--Select Remarks--</option>
+                              <option>Uganda cancer institute,  OSF funds for COVID Implementation to 10 Hospices and TCT funds to 10 organisations to improve service acces and delivery in Kenya, S.Africa, Togo, Ethiopia, Malawi, Uganda and Zimbabwe</option>
+                              <option>Number of patients receiving palliative care through the small grants support 3,699 (Adults n=3400) (children n=299) Number of home visits conducted to reachnpatients who could not make it to the facilities 2,611</option>
+                            </select>
+                          </div>
+                        </div>
+
                         <div className="row">
                           <div className="col-md-6">
                             <div className="form-group">
@@ -121,7 +133,7 @@ const ServiceDelivery = () => {
                             </div>
                           </div>
 
-                          <div className="col-md-6">
+                          <div className="col-md-12">
                             <div className="form-group">
                               <label style={{ fontWeight: "bold" }}>Total SAR 2011/2012 *</label>
                               <input type="number" name="total-sar-2011/2012" className="form-control" required="required" data-error="" />

@@ -123,7 +123,7 @@ const Policy = () => {
                             </div>
                           </div>
 
-                          <div className="col-md-6">
+                          <div className="col-md-12">
                             <div className="form-group">
                               <label style={{ fontWeight: "bold" }}>Total SAR 2011/2012 *</label>
                               <input type="number" name="total-sar-2011/2012" className="form-control" required="required" data-error="" />

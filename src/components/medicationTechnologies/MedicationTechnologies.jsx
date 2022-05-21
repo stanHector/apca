@@ -89,6 +89,17 @@ const MedicationTechnologies = () => {
                           </div>
                         </div>
 
+
+                        <div className="col-sd-12">
+                          <div className="form-group">
+                            <label style={{ fontWeight: "bold" }}>Remarks</label>
+                            <select name="need" className="form-control" required="required" data-error="">
+                              <option value="" selected disabled>--Select Remarks--</option>
+                              <option>122 egg-box mattresses, 20 wheelchairs, 10 sheepskins, 3 hospital beds with there mattresses, Uptake for technology to sustain access to care during the pandemic 3 services.</option>
+                            </select>
+                          </div>
+                        </div>
+
                         <div className="row">
                           <div className="col-md-6">
                             <div className="form-group">
@@ -96,6 +107,7 @@ const MedicationTechnologies = () => {
                               <input type="number" name="total-sar-2015/2016" className="form-control" required="required" data-error="" />
                             </div>
                           </div>
+
 
                           <div className="col-md-6">
                             <div className="form-group">
@@ -122,7 +134,7 @@ const MedicationTechnologies = () => {
                             </div>
                           </div>
 
-                          <div className="col-md-6">
+                          <div className="col-md-12">
                             <div className="form-group">
                               <label style={{ fontWeight: "bold" }}>Total SAR 2011/2012 *</label>
                               <input type="number" name="total-sar-2011/2012" className="form-control" required="required" data-error="" />

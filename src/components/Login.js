@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
 import img from "../assets/logo.jpg";
 import "../App.css";
 
@@ -22,8 +21,11 @@ const App = ({ setUser }) => {
 
   return (
     <div class="container">
+      
       <div class="screen">
+      
         <div class="screen__content">
+        <img src={img} alt="img-logo" style={{height:"100px"}}/>
           <form class="login" onSubmit={handleForm}>
             <div class="login__field">
               <i class="login__icon fas fa-user"></i>

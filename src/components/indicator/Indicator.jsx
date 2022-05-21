@@ -92,12 +92,26 @@ const Indicator = () => {
                         </div>
                       </div>
 
-                      <div className="row">
+                      {/* <div className="row">
                         <div className="col-md-12">
                           <div className="form-group">
                             <label style={{ fontWeight: "bold" }}>Remark *</label>
                             <input type="text" name="total-sar-2015/2016" className="form-control" required="required" data-error="" />
                           </div>
+                        </div>
+                      </div> */}
+
+                      <div className="col-sd-12">
+                        <div className="form-group">
+                          <label style={{ fontWeight: "bold" }}>Remarks</label>
+                          <select name="need" className="form-control" required="required" data-error="">
+                            <option value="" selected disabled>--Select Remarks--</option>
+                            <option>Training journalists, hats-on, advocacy stories, community engagement, palliative care awreness, district leadership (political and health), World Cancer Day and International Childhood Cancer Day</option>
+                            <option>These include policy makers, religious leaders and communities (90 Journalists and Palliative Care Service Providers)</option>
+                            <option>These included Calendars, flyers, t-shirts, paper, Universal health package, documentary</option>
+                            <option>Journalists training in palliative care in africa, APCA-POS and APCA C-POS workshop, scoping review of the evidence on women's groups in Uganda, Examining the value proposition of palliative care, adherence to COVID-19 preveentive guidelines and its association with intimate partner violence and depressive symptoms among women living in kamapala slums, spiritual and existencial health in terminal illness, Paediatric Cancer in Africa, Covid-19 vaccinaation for people with pre-existing conditions, grief and bereavement in palliative care, board and governance</option>
+                            <option>Presentations were based case studies of patients and lived experiences of cancer patients.</option>
+                          </select>
                         </div>
                       </div>
 
