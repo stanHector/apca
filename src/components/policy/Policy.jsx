@@ -12,7 +12,6 @@ const Policy = () => {
     <Container>
       <div>
         <div className="container">
-
           <div className="row ">
             <div className=" text-center mt-5 ">
               <h1>Policy</h1>

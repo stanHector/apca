@@ -23,7 +23,7 @@ const Container = styled.nav`
     background: #F4F6F6;
     top: 50px;
     height:100%;
-    width: 250px; /* Set the width of the sidebar */
+    width:17%; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
@@ -38,7 +38,7 @@ const SideBar = () => {
   return (
     <React.Fragment>
       <Container>
-        <label style={{ fontWeight: "bold", marginTop: "12px", margin: "20px", textDecoration: "underline", color: "#694977", fontSize: "40px" }}>Dashboard</label>
+        <label style={{ fontWeight: "bold", marginTop: "12px", margin: "20px", textDecoration: "underline", color: "#694977", fontSize: "35px" }}>Dashboard</label>
         <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Home</NavLink>
         <NavLink to="/indicator" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Indicator</NavLink>
         <NavLink to="/service" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Service Delivery</NavLink>

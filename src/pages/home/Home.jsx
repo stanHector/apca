@@ -6,6 +6,7 @@ import FeatureInfo from '../../components/featuredInfo/FeatureInfo';
 // import Topbar from "../../components/topbar/Topbar"
 import styled from "styled-components";
 import { PageSytles } from "../../styles/globalStyles";
+import { Analytics } from '../../components/analytics/Analytics';
 
 const Container = styled.div`
   ${PageSytles}
@@ -17,6 +18,7 @@ const Home = () => {
     <Container>
       {/* home */}
       <FeatureInfo />
+      <Analytics/>
                 {/* <WidgetLg assets={assets} isLoading={isLoading} />
                 <WidgetSm /> */}
     </Container>

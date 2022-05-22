@@ -21,7 +21,6 @@ const Education = () => {
               <div className="container">
                 <form>
                   <div className="controls">
-                    <p style={{ color: "#A355AF", fontSize: "13px" }}>To develop and implement information strategy on palliative care for all levels of stakeholders.</p>
                     <div className="col-sd-12">
                       <div className="form-group">
                         <label style={{ fontWeight: "bold" }}>Fiscal Year Period</label>
@@ -35,18 +34,17 @@ const Education = () => {
 
                     <div className="col-sd-12">
                       <div className="form-group">
-                        <label style={{ fontWeight: "bold" }}>Indicator</label>
+                        <label style={{ fontWeight: "bold" }}>Education</label>
                         <select name="need" className="form-control" required="required" data-error="">
-                          <option value="" selected disabled>--Select Indicator--</option>
-                          <option>Number of PC awareness and sensitization  meetings conducted</option>
-                          <option>Number of stakeholders who acquired knowledge from the PC information and awareness raising activities</option>
-                          <option>Number of new policies/policy amendments approved/ratified by BOD during this period</option>
-                          <option>Number of BOD meetings held</option>
-                          <option>Number of SMT meetings held</option>
-                          <option>Number of Annual report produced and published</option>
-                          <option>Number of Annual BOD assessments done</option>
-                          <option>Number of personal development plans for BOD implemented</option>
-                          <option>Number of regional and international engagements </option>
+                          <option value="" selected disabled>--Select Education--</option>
+                          <option>Number of countries that developed specialist PC training programs during this period</option>
+                          <option>Number of countries  that developed a national PC training package during this period</option>
+                          <option>Number of institutions/organizations provided with PC training materials, resources and equipment</option>
+                          <option>Number of care providers who received  pre-service PC training</option>
+                          <option>Number of care providers who successfully completed an in-service basic PC training programme</option>
+                          <option>Number of care providers supported to have specialist PC skills</option>
+                          <option>Number of care providers and educators supported to have PC training skills (ToT)</option>
+                          <option>Number of community volunteers who successfully completed a PC training programme</option>
                         </select>
                       </div>
                     </div>
@@ -91,6 +89,18 @@ const Education = () => {
                         </div>
                       </div>
                     </div>
+
+                    <div className="col-sd-12">
+                        <div className="form-group">
+                          <label style={{ fontWeight: "bold" }}>Remarks</label>
+                          <select name="need" className="form-control" required="required" data-error="">
+                            <option value="" selected disabled>--Select Remarks--</option>
+                            <option>Nurses and social workers</option>
+                            <option>Include community and facility-based staff</option>
+                            <option>This includes 88 Palliative Care Ambassadors</option>
+                          </select>
+                        </div>
+                      </div>
 
                     <div className="row">
                       <div className="col-md-12">
