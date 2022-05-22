@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { PageSytles } from "../../styles/globalStyles";
+import { AddCircleOutlineSharp } from "@material-ui/icons";
 
 const Container = styled.div`
   ${PageSytles}
@@ -10,22 +11,16 @@ export const PolicyList = () => {
     return <Container>
         <React.Fragment>
             <div>
-                <div className="asset-list">
-                    {/* <Topbar /> */}
-                    {/* <div className="row"> */}
+                <div className="policy-list">
                     <div className="text-center">
                         <div style={{ marginTop: "20px" }} >
                             <span className="logs" style={{ fontWeight: "bold" }}>Policies</span>
                         </div>
-
-                        {/* <div className="d-flex flex-row bd-highlight mb-3">
-                        <input style={{ borderRadius: "12px", marginTop: "20px", marginRight: "15px", marginLeft: "40px" }} type="text" className="form-control" name="search" size="100" placeholder="Search by Description or SerialNumber or AssetID" value={search} onChange={this.searchBox} />
-                        <button style={{ borderRadius: "12px", marginTop: "15px" }} type="button" name="search" className=" btn btn-outline-primary" onClick={this.searchAsset}><SearchOutlined /></button>
+                       
                     </div>
-                    <div className="topRight"> */}
-
-
-                    </div>
+                     {/* <button className="btn btn-primary" >
+                            <AddCircleOutlineSharp />
+                        </button> */}
                 </div>
                 <div className="col-lg-12 mx-auto">
                     <div className="card mt-2 mx-auto p-4 bg-light">
@@ -87,7 +82,7 @@ export const PolicyList = () => {
                                 <div className="clearfix"></div>
                                 <nav aria-label="Page navigation example">
                                     {/* <ul className="pagination"> */}
-                                        {/* <li className="page-item"><a type="button" className="page-link" disabled={currentPage === 1 ? true : false} onClick={this.showPrevPage}>Previous</a></li>
+                                    {/* <li className="page-item"><a type="button" className="page-link" disabled={currentPage === 1 ? true : false} onClick={this.showPrevPage}>Previous</a></li>
                                 <li className="page-item"><a type="button" className="page-link" disabled={currentPage === 1 ? true : false} onClick={this.showFirstPage}>First</a></li>
                                 <li className="page-item"><a type="button" className="page-link" disabled={currentPage === totalPages ? true : false} onClick={this.showNextPage}>Next</a></li>
                                 <li className="page-item"><a type="button" className="page-link" disabled={currentPage === totalPages ? true : false} onClick={this.showLastPage}>Last</a></li> */}

@@ -176,3 +176,17 @@ body {
 .social-login__icon:hover {
 	transform: scale(1.5);	
 }
+
+/* .policy-list{
+	margin-left: 5px;
+	margin-right:5px;  
+  }  */
+
+  .top{
+    height: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color:   #3a9fe1   ;
+    /* margin-top: 12px; */
+}
