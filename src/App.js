@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AfricanPalliativeCare } from './components/africanPalliativeCare/AfricanPalliativeCare';
+import { ServiceDeliveryList } from './components/serviceDelivery/ServiceDeliveryList';
+import { PolicyList } from './components/policy/PolicyList';
 import {
   Login,
   Layout,
@@ -10,6 +12,7 @@ import {
   Policy,
   Education,
   MedicationTechnologies,
+  IndicatorList,
   ProtectedRoutes,
   // AfricanPalliativeCare,
   
@@ -29,12 +32,13 @@ function App() {
             <Layout />
           </ProtectedRoutes> }>
           <Route index element={<Home />} />
-          <Route path="/indicator" element={<CreateIndicator />} />
-          <Route path="/service" element={<ServiceDelivery />} />
-          <Route path="/policy" element={<Policy />} />
+          {/* <Route path="/indicator" element={<CreateIndicator />} /> */}
+          <Route path="/service-list" element={<ServiceDeliveryList />} />
+          <Route path="/policy-list" element={<PolicyList />} />
           <Route path="medi-tech" element={<MedicationTechnologies/>}/>
           <Route path="/education" element={<Education/>}/>
           <Route path="/africa-palliative" element={<AfricanPalliativeCare/>}/>
+          <Route path="/indicator-list" element={<IndicatorList/>}/>
           
           <Route path="*" element={<h1>Not found</h1>} />
         </Route>

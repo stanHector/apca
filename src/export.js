@@ -8,4 +8,5 @@ export { default as ServiceDelivery } from "./components/serviceDelivery/Service
 export { default as Policy } from "./components/policy/Policy"
 export { default as Education } from "./components/education/Education"
 export { default as MedicationTechnologies } from "./components/medicationTechnologies/MedicationTechnologies"
+export { default as IndicatorList } from "./components/indicator/IndicatorList"
 export { default as ProtectedRoutes } from "./services/ProtectedRoutes"

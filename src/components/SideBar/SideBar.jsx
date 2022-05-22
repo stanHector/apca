@@ -40,9 +40,9 @@ const SideBar = () => {
       <Container>
         <label style={{ fontWeight: "bold", marginTop: "12px", margin: "20px", textDecoration: "underline", color: "#694977", fontSize: "35px" }}>Dashboard</label>
         <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Home</NavLink>
-        <NavLink to="/indicator" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Indicator</NavLink>
-        <NavLink to="/service" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Service Delivery</NavLink>
-        <NavLink to="/policy" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Policy</NavLink>
+        <NavLink to="/indicator-list" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Indicators</NavLink>
+        <NavLink to="/service-list" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Service Deliveries</NavLink>
+        <NavLink to="/policy-list" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Policy</NavLink>
         <NavLink to="/education" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Education</NavLink>
         <NavLink to="/medi-tech" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Medication And Technologies</NavLink>
         <NavLink to="/africa-palliative" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>A functional African palliative care research network in place</NavLink>
