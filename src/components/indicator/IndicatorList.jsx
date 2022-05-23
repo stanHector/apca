@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { PageSytles } from "../../styles/globalStyles";
-import { AddCircleOutlineOutlined } from "@material-ui/icons";
+import {AddCircleSharp } from "@material-ui/icons";
 import Indicator from "./Indicator";
 
 const Container = styled.div`
@@ -9,9 +9,11 @@ const Container = styled.div`
 `;
 
 const IndicatorList = () => {
-    // const [showForm, setShowForm] = useState(false);
+    const [showForm, setShowForm] = useState(false);
 
-
+    const toggleForm = () => {
+        setShowForm(!showForm);
+    }
 
     return <Container>
         <React.Fragment>
@@ -22,38 +24,38 @@ const IndicatorList = () => {
                     </div>
 
                     <div className="topRight">
-                        <button style={{ marginRight: "8px", margin: "10px" }} className="btn btn-primary float-lg-end">
-                            <AddCircleOutlineOutlined />
+                        <button style={{ marginRight: "8px", margin: "10px" }} className="btn btn float-lg-end"  onClick={toggleForm}>
+                            <AddCircleSharp />
                         </button>
                     </div>
                 </div>
-                
-                <div className="col-lg-12 mx-auto">
-                    <div className="card mt-2 mx-auto p-4 bg-light">
-                        <table className="table table-striped table-bordered">
-                            <thead style={{ textAlign: "center", fontSize: "12px" }}>
-                                <tr>
-                                    <th>No.</th>
-                                    <th>FYPeriod</th>
-                                    <th>INDICATOR</th>
-                                    <th>APR-JUN</th>
-                                    <th>JUL-SEP</th>
-                                    <th>OCT-DEC</th>
-                                    <th>JAN-MAR</th>
-                                    <th>TOTAL</th>
-                                    <th>REMARKS</th>
-                                    <th>TOTAL SAR</th>
-                                    <th>FY1</th>
-                                    <th>FY2</th>
-                                    <th>FY3</th>
-                                    <th>FY4</th>
-                                    <th>TOTAL CUMMULATIVE-5 YEAR</th>
-                                    <th>Remarks</th>
-                                    {/* <th colSpan="3">Actions</th> */}
-                                </tr>
-                            </thead>
-                            <tbody style={{ textAlign: "center", fontSize: "11px" }}>
-                                {/* {assets.length === 0 ?
+                {!showForm ? (
+                    <div className="col-lg-12 mx-auto">
+                        <div className="card mt-2 mx-auto p-4 bg-light">
+                            <table className="table table-striped table-bordered">
+                                <thead style={{ textAlign: "center", fontSize: "12px" }}>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>FYPeriod</th>
+                                        <th>INDICATOR</th>
+                                        <th>APR-JUN</th>
+                                        <th>JUL-SEP</th>
+                                        <th>OCT-DEC</th>
+                                        <th>JAN-MAR</th>
+                                        <th>TOTAL</th>
+                                        <th>REMARKS</th>
+                                        <th>TOTAL SAR</th>
+                                        <th>FY1</th>
+                                        <th>FY2</th>
+                                        <th>FY3</th>
+                                        <th>FY4</th>
+                                        <th>TOTAL CUMMULATIVE-5 YEAR</th>
+                                        <th>Remarks</th>
+                                        {/* <th colSpan="3">Actions</th> */}
+                                    </tr>
+                                </thead>
+                                <tbody style={{ textAlign: "center", fontSize: "11px" }}>
+                                    {/* {assets.length === 0 ?
                       <tr align="center"><td colSpan="20">No Record Found</td></tr> :
                       data?.map((asset, index) => (
                           <tr key={asset?.id}>
@@ -78,26 +80,27 @@ const IndicatorList = () => {
                               <td className="text-center" style={{ paddingLeft: "20px" }}><Link to={`/view-asset/${asset.id}`} className="view" style={{ alignItem: "center", color: "green" }}> <Visibility /></Link> </td>
                           </tr>
                       ))} */}
-                            </tbody>
-                        </table>
-                        <table className="table">
-                            <div style={{ float: 'left', fontFamily: 'monospace', color: '#0275d8' }}>
-                                {/* Page {currentPage} of {totalPages} */}
-                            </div>
-                            <div style={{ float: 'right' }}>
-                                <div className="clearfix"></div>
-                                <nav aria-label="Page navigation example">
-                                    {/* <ul className="pagination"> */}
-                                    {/* <li className="page-item"><a type="button" className="page-link" disabled={currentPage === 1 ? true : false} onClick={this.showPrevPage}>Previous</a></li>
+                                </tbody>
+                            </table>
+                            <table className="table">
+                                <div style={{ float: 'left', fontFamily: 'monospace', color: '#0275d8' }}>
+                                    {/* Page {currentPage} of {totalPages} */}
+                                </div>
+                                <div style={{ float: 'right' }}>
+                                    <div className="clearfix"></div>
+                                    <nav aria-label="Page navigation example">
+                                        {/* <ul className="pagination"> */}
+                                        {/* <li className="page-item"><a type="button" className="page-link" disabled={currentPage === 1 ? true : false} onClick={this.showPrevPage}>Previous</a></li>
                           <li className="page-item"><a type="button" className="page-link" disabled={currentPage === 1 ? true : false} onClick={this.showFirstPage}>First</a></li>
                           <li className="page-item"><a type="button" className="page-link" disabled={currentPage === totalPages ? true : false} onClick={this.showNextPage}>Next</a></li>
                           <li className="page-item"><a type="button" className="page-link" disabled={currentPage === totalPages ? true : false} onClick={this.showLastPage}>Last</a></li> */}
-                                    {/* </ul> */}
-                                </nav>
-                            </div>
-                        </table>
-                    </div>
-                </div>
+                                        {/* </ul> */}
+                                    </nav>
+                                </div>
+                            </table>
+                        </div>
+                    </div>) : (<Indicator />)
+                }
             </div>
         </React.Fragment>
 

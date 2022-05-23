@@ -7,7 +7,7 @@ const Container = styled.div`
   ${PageSytles}
 `;
 
-export const EducationList = () => {
+const EducationList = () => {
     return <Container>
         <React.Fragment>
             <div>
@@ -98,3 +98,4 @@ export const EducationList = () => {
     </Container>
 };
 
+export default EducationList;

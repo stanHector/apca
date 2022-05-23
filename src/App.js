@@ -1,20 +1,19 @@
 import React, { useState } from 'react'
 import { Routes, Route, useLocation } from "react-router-dom";
-import { AfricanPalliativeCare } from './components/africanPalliativeCare/AfricanPalliativeCare';
-import { ServiceDeliveryList } from './components/serviceDelivery/ServiceDeliveryList';
-import { PolicyList } from './components/policy/PolicyList';
-import {EducationList} from'./components/education/EducationList'
-import { MedicationTechnologiesList } from './components/medicationTechnologies/MedicationTechnologiesList';
 import {
   Login,
   Layout,
-  CreateIndicator,
   Home,
   ServiceDelivery,
   Policy,
   Education,
   MedicationTechnologies,
+  AfricanPalliativeCare,
+  MedicationTechnologiesList,
+  ServiceDeliveryList,
   IndicatorList,
+  PolicyList,
+  EducationList,
   Indicator,
   ProtectedRoutes,
   AfricanPalliativeCareList,
@@ -41,6 +40,7 @@ function App() {
           <Route path="/service-list" element={<ServiceDeliveryList />} />
           <Route path="/policy-list" element={<PolicyList />} />
           <Route path="/indicator" element={<Indicator />} />
+          <Route path="/service" element={<ServiceDelivery />} />
           <Route path="/medi-tech-list" element={<MedicationTechnologiesList/>}/>
           <Route path="/education-list" element={<EducationList/>}/>
           <Route path="/africa-palliative-list" element={<AfricanPalliativeCareList/>}/>

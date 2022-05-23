@@ -6,7 +6,7 @@ const Container = styled.div`
   ${PageSytles}
 `;
 
-export const AfricanPalliativeCare = () => {
+const AfricanPalliativeCare = () => {
   return (
     <Container>
       <div>
@@ -318,3 +318,4 @@ export const AfricanPalliativeCare = () => {
     </Container>
   )
 }
+export default AfricanPalliativeCare;

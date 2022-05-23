@@ -1,27 +1,36 @@
-import React from "react";
+import React ,{ useState } from "react";
 import styled from "styled-components";
 import { PageSytles } from "../../styles/globalStyles";
-import { AddCircleOutlineOutlined } from "@material-ui/icons";
+import {  AddCircleSharp } from "@material-ui/icons";
+import ServiceDelivery from "./ServiceDelivery";
 
 const Container = styled.div`
   ${PageSytles}
 `;
 
-export const ServiceDeliveryList = () => {
+const ServiceDeliveryList = () => {
+
+    const [showServiceForm, setShowServiceForm] = useState(false);
+
+    const toggleForm = () => {
+        setShowServiceForm(!showServiceForm);
+    }
+
     return <Container>
         <React.Fragment>
-            <div>
-            <div className="top">
+            <div style={{marginBottom:"20px"}}>
+                <div className="top">
                     <div style={{ marginTop: "20px" }} >
                         <span className="logs" style={{ fontWeight: "bold", marginLeft: "20px" }}>Service Deliveries</span>
                     </div>
 
                     <div className="topRight">
-                        <button style={{ marginRight: "8px", margin: "10px" }} className="btn btn-primary float-lg-end">
-                            <AddCircleOutlineOutlined />
+                        <button style={{ marginRight: "8px", margin: "10px" }} className="btn btn float-lg-end" onClick={toggleForm}>
+                            <AddCircleSharp />
                         </button>
                     </div>
                 </div>
+                {!showServiceForm ? (
                 <div className="col-lg-12 mx-auto">
                     <div className="card mt-2 mx-auto p-4 bg-light">
                         <table className="table table-striped table-bordered">
@@ -91,9 +100,11 @@ export const ServiceDeliveryList = () => {
                             </div>
                         </table>
                     </div>
-                </div>
+                </div>) : (<ServiceDelivery />)
+                }
             </div>
         </React.Fragment>
     </Container>;
 
 }
+export default ServiceDeliveryList;

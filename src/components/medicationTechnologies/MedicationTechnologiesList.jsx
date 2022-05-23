@@ -7,7 +7,7 @@ const Container = styled.div`
   ${PageSytles}
 `;
 
-export const MedicationTechnologiesList = () => {
+const MedicationTechnologiesList = () => {
     return <Container>
         <React.Fragment>
             <div>
@@ -98,3 +98,4 @@ export const MedicationTechnologiesList = () => {
     </Container>
 };
 
+export default MedicationTechnologiesList;
