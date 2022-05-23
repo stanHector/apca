@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { PageSytles } from "../../styles/globalStyles";
-import { AddCircleOutlineSharp } from "@material-ui/icons";
+import { AddCircleOutlineOutlined } from "@material-ui/icons";
 
 const Container = styled.div`
   ${PageSytles}
@@ -11,16 +11,16 @@ export const PolicyList = () => {
     return <Container>
         <React.Fragment>
             <div>
-                <div className="policy-list">
-                    <div className="text-center">
-                        <div style={{ marginTop: "20px" }} >
-                            <span className="logs" style={{ fontWeight: "bold" }}>Policies</span>
-                        </div>
-                       
+            <div className="top">
+                    <div style={{ marginTop: "20px" }} >
+                        <span className="logs" style={{ fontWeight: "bold", marginLeft: "20px" }}>Policies</span>
                     </div>
-                     {/* <button className="btn btn-primary" >
-                            <AddCircleOutlineSharp />
-                        </button> */}
+
+                    <div className="topRight">
+                        <button style={{ marginRight: "8px", margin: "10px" }} className="btn btn-primary float-lg-end">
+                            <AddCircleOutlineOutlined />
+                        </button>
+                    </div>
                 </div>
                 <div className="col-lg-12 mx-auto">
                     <div className="card mt-2 mx-auto p-4 bg-light">
@@ -30,20 +30,20 @@ export const PolicyList = () => {
                                     <th>No.</th>
                                     <th>FYPeriod</th>
                                     <th>POLICY</th>
-                                    <th>OCT-DEC</th>
-                                    <th>JAN-MAR</th>
                                     <th>APR-JUN</th>
                                     <th>JUL-SEP</th>
+                                    <th>OCT-DEC</th>
+                                    <th>JAN-MAR</th>
                                     <th>TOTAL</th>
                                     <th>REMARKS</th>
                                     <th>TOTAL SAR</th>
-                                    <th>2015/2016</th>
-                                    <th>2014/2015</th>
-                                    <th>2013/2014</th>
-                                    <th>2012/2011</th>
+                                    <th>FY1</th>
+                                    <th>FY2</th>
+                                    <th>FY3</th>
+                                    <th>FY4</th>
                                     <th>TOTAL CUMMULATIVE-5 YEAR</th>
                                     <th>Remarks</th>
-                                    <th colSpan="3">Actions</th>
+                                    {/* <th colSpan="3">Actions</th> */}
                                 </tr>
                             </thead>
                             <tbody style={{ textAlign: "center", fontSize: "11px" }}>

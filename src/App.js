@@ -3,6 +3,8 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { AfricanPalliativeCare } from './components/africanPalliativeCare/AfricanPalliativeCare';
 import { ServiceDeliveryList } from './components/serviceDelivery/ServiceDeliveryList';
 import { PolicyList } from './components/policy/PolicyList';
+import {EducationList} from'./components/education/EducationList'
+import { MedicationTechnologiesList } from './components/medicationTechnologies/MedicationTechnologiesList';
 import {
   Login,
   Layout,
@@ -13,10 +15,13 @@ import {
   Education,
   MedicationTechnologies,
   IndicatorList,
+  Indicator,
   ProtectedRoutes,
-  // AfricanPalliativeCare,
+  AfricanPalliativeCareList,
   
 } from "./export";
+
+
 
 function App() {
   const [user, setUser] = useState({});
@@ -35,9 +40,10 @@ function App() {
           {/* <Route path="/indicator" element={<CreateIndicator />} /> */}
           <Route path="/service-list" element={<ServiceDeliveryList />} />
           <Route path="/policy-list" element={<PolicyList />} />
-          <Route path="medi-tech" element={<MedicationTechnologies/>}/>
-          <Route path="/education" element={<Education/>}/>
-          <Route path="/africa-palliative" element={<AfricanPalliativeCare/>}/>
+          <Route path="/indicator" element={<Indicator />} />
+          <Route path="/medi-tech-list" element={<MedicationTechnologiesList/>}/>
+          <Route path="/education-list" element={<EducationList/>}/>
+          <Route path="/africa-palliative-list" element={<AfricanPalliativeCareList/>}/>
           <Route path="/indicator-list" element={<IndicatorList/>}/>
           
           <Route path="*" element={<h1>Not found</h1>} />
