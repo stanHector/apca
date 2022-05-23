@@ -1,42 +1,69 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-import img from '../assets/logo.jpg'
-import '../App.css'
+import img from "../assets/logo.jpg";
+import "../App.css";
+
+const App = ({ setUser }) => {
+  const [formdata, setFormdata] = useState({ user: "", password: "" });
+
+    const navigate = useNavigate();
+    
 
 
-const App = (props) => {
+  const handleForm = (e) => {
+    e.preventDefault();
+    if (!formdata.user && !formdata.password) return;
+    console.log(e.target.value);
+    setUser({ user: formdata.user, password: formdata.password });
 
-    return (
-        <div className="container" style={{ marginTop: "15px", padding: "50px" }}>
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-6 offset-md-3">
-                    {/* <h2 className="text-center text-dark mt-5" style={{ fontFamily: "monospace", fontWeight: "bold" }} >Enter Login</h2> */}
-                        <div className="card my-5">
-                        <form className="card-body cardbody-color p-lg-5">
-                                <div className="text-center">
-                                    <img src={img} className="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
-                                        width="100px" alt="profile" />
-                                </div>
+    navigate("/");
+  };
 
-                                <div className="mb-3">
-                                    <input type="text" className="form-control" id="username" aria-describedby="emailHelp"
-                                        placeholder="Username" />
-                                </div>
-                                <div className="mb-3">
-                                    <input type="Password" className="form-control" id="password" placeholder="Password" />
-                                </div>
-                                <div className="text-center">
-                                    <button type="submit" className="btn btn-color" style={{backgroundColor:"#77457F", fontWeight:"bold", color:"white", height:"50px"}}>Login</button>
-                                </div>
-                            
-                            </form>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <div class="container">
+      <div class="screen">
+        <div class="screen__content">
+          <form class="login" onSubmit={handleForm}>
+            <div class="login__field">
+              <i class="login__icon fas fa-user"></i>
+              <input
+                type="text"
+                class="login__input"
+                placeholder="User name"
+                name="user"
+                onChange={(e) =>
+                  setFormdata({ ...formdata, user: e.target.value })
+                }
+              />
             </div>
+            <div class="login__field">
+              <i class="login__icon fas fa-lock"></i>
+              <input
+                type="password"
+                class="login__input"
+                placeholder="Password"
+                name="password"
+                onChange={(e) =>
+                  setFormdata({ ...formdata, password: e.target.value })
+                }
+              />
+            </div>
+            <button class="button login__submit">
+              <span class="button__text">Log In Now</span>
+              <i class="button__icon fas fa-chevron-right"></i>
+            </button>
+          </form>
         </div>
-    );
+        <div class="screen__background">
+          <span class="screen__background__shape screen__background__shape4"></span>
+          <span class="screen__background__shape screen__background__shape3"></span>
+          <span class="screen__background__shape screen__background__shape2"></span>
+          <span class="screen__background__shape screen__background__shape1"></span>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default App;

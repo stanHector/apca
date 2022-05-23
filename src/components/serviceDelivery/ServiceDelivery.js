@@ -1,12 +1,12 @@
 import React from 'react'
 
-const CreateIndicator = () => {
+const ServiceDelivery = () => {
 
   return (
     <div>
       <div className="container">
         <div className=" text-center mt-5 ">
-          <h1>Indicator</h1>
+          <h1>Service Delivery</h1>
         </div>
         <div className="row ">
           <div className="col-lg-8 mx-auto">
@@ -15,7 +15,7 @@ const CreateIndicator = () => {
                 <div className="container">
                   <form>
                     <div className="controls">
-                      <p style={{ color: "#A355AF", fontSize: "13px" }}>To develop and implement information strategy on palliative care for all levels of stakeholders.</p>
+                      <p style={{ color: "#A355AF", fontSize: "13px" }}>To provide leadership and coordination for palliative care integration into health policies, education programmes and health services in Africa</p>
                       <div className="col-sd-12">
                         <div className="form-group">
                           <label style={{ fontWeight: "bold" }}>Fiscal Year Period</label>
@@ -29,18 +29,12 @@ const CreateIndicator = () => {
 
                       <div className="col-sd-12">
                         <div className="form-group">
-                          <label style={{ fontWeight: "bold" }}>Indicator</label>
+                          <label style={{ fontWeight: "bold" }}>Service Delivery</label>
                           <select name="need" className="form-control" required="required" data-error="">
-                            <option value="" selected disabled>--Select Indicator--</option>
-                            <option>Number of PC awareness and sensitization  meetings conducted</option>
-                            <option>Number of stakeholders who acquired knowledge from the PC information and awareness raising activities</option>
-                            <option>Number of new policies/policy amendments approved/ratified by BOD during this period</option>
-                            <option>Number of BOD meetings held</option>
-                            <option>Number of SMT meetings held</option>
-                            <option>Number of Annual report produced and published</option>
-                            <option>Number of Annual BOD assessments done</option>
-                            <option>Number of personal development plans for BOD implemented</option>
-                            <option>Number of regional and international engagements </option>
+                            <option value="" selected disabled>--Select service Delivery--</option>
+                            <option>Number of supported health faciilities with established PC services</option>
+                            <option>Number of PC patients provided with/accessing PC services</option>
+                            <option>Number of PC referrals done</option>
                           </select>
                         </div>
                       </div>
@@ -87,15 +81,6 @@ const CreateIndicator = () => {
                       </div>
 
                       <div className="row">
-                        <div className="col-md-12">
-                          <div className="form-group">
-                            <label style={{ fontWeight: "bold" }}>Remark *</label>
-                            <input type="text" name="total-sar-2015/2016" className="form-control" required="required" data-error="" />
-                          </div>
-                        </div>
-                        </div>
-
-                      <div className="row">
                         <div className="col-md-6">
                           <div className="form-group">
                             <label style={{ fontWeight: "bold" }}>Total SAR 2015/2016 *</label>
@@ -109,16 +94,18 @@ const CreateIndicator = () => {
                             <input type="number" name="total-sar-2014/2015" className="form-control" required="required" data-error="" />
                           </div>
                         </div>
+
                       </div>
 
                       <div className="row">
-                        <div className="col-md-6">
+                        
+                      <div className="col-md-6">
                           <div className="form-group">
                             <label style={{ fontWeight: "bold" }}>Total SAR 2013/2014 *</label>
                             <input type="number" name="total-sar-2013/2014" className="form-control" required="required" data-error="" />
                           </div>
                         </div>
-
+                        
                         <div className="col-md-6">
                           <div className="form-group">
                             <label style={{ fontWeight: "bold" }}>Total SAR 2012/2013 *</label>
@@ -126,7 +113,7 @@ const CreateIndicator = () => {
                           </div>
                         </div>
 
-                        <div className="col-md-12">
+                        <div className="col-md-6">
                           <div className="form-group">
                             <label style={{ fontWeight: "bold" }}>Total SAR 2011/2012 *</label>
                             <input type="number" name="total-sar-2011/2012" className="form-control" required="required" data-error="" />
@@ -137,7 +124,7 @@ const CreateIndicator = () => {
                       <div className="row">
                         <div className="col-md-12">
                           <div className="form-group">
-                            <label style={{ fontWeight: "bold" }}>Total Cummulative-5 Year Period *</label>
+                            <label style={{ fontWeight: "bold" }}>Total Cummulative -5 Year Period *</label>
                             <input type="number" name="cummulative" className="form-control" required="required" data-error="" />
                           </div>
                         </div>
@@ -167,4 +154,4 @@ const CreateIndicator = () => {
   )
 }
 
-export default CreateIndicator;
+export default ServiceDelivery;
