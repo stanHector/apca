@@ -1,34 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { PageSytles } from "../../styles/globalStyles";
-import { useNavigate } from "react-router-dom";
 import { AddCircleOutlineOutlined } from "@material-ui/icons";
+import Indicator from "./Indicator";
 
 const Container = styled.div`
   ${PageSytles}
 `;
 
 const IndicatorList = () => {
-    const navigate = useNavigate();
+    // const [showForm, setShowForm] = useState(false);
 
 
-    const indicator = () => {
-        navigate.push("/indicator")
-    }
+
     return <Container>
         <React.Fragment>
             <div>
-            <div className="top">
+                <div className="top">
                     <div style={{ marginTop: "20px" }} >
                         <span className="logs" style={{ fontWeight: "bold", marginLeft: "20px" }}>Indicators</span>
                     </div>
 
                     <div className="topRight">
-                        <button style={{ marginRight: "8px", margin: "10px" }} className="btn btn-primary float-lg-end" onClick={indicator} > 
-                            <AddCircleOutlineOutlined /> 
+                        <button style={{ marginRight: "8px", margin: "10px" }} className="btn btn-primary float-lg-end">
+                            <AddCircleOutlineOutlined />
                         </button>
                     </div>
                 </div>
+                
                 <div className="col-lg-12 mx-auto">
                     <div className="card mt-2 mx-auto p-4 bg-light">
                         <table className="table table-striped table-bordered">
