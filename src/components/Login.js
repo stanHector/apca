@@ -1,42 +1,80 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { useNavigate, Navigate } from "react-router-dom";
 import img from "../assets/logo.jpg";
 import "../App.css";
+import { login } from "../state/slice/authSlice";
 
 const App = ({ setUser }) => {
-  const [formdata, setFormdata] = useState({ user: "", password: "" });
+  const [formdata, setFormdata] = useState({ username: "", password: "" });
+  const [loading, setLoading] = useState(false);
+  const { isLoggedIn } = useSelector((state) => state.auth);
+  const { message } = useSelector((state) => state.message);
+  const dispatch = useDispatch();
 
   const navigate = useNavigate();
 
-
-
-  const handleForm = (e) => {
-    e.preventDefault();
-    if (!formdata.user && !formdata.password) return;
-    console.log(e.target.value);
-    setUser({ user: formdata.user, password: formdata.password });
-
-    navigate("/");
+  const handleLogin = (e) => {
+  e.preventDefault();
+  const { username, password } = formdata;
+  setLoading(true);
+  dispatch(login({ username, password }))
+    .unwrap()
+    .then(() => {
+      navigate("/");
+      window.location.reload();
+    })
+    .catch(() => {
+      setLoading(false);
+      alert(message);
+    });
   };
+  
+  if (isLoggedIn) {
+    return <Navigate to="/" />;
+  }
+
+  // const handleForm = (e) => {
+  //   e.preventDefault();
+  //   if (!formdata.user && !formdata.password) return;
+  //   console.log(e.target.value);
+  //   setUser({ user: formdata.user, password: formdata.password });
+
+  //   navigate("/");
+  // };
 
   return (
     <div className="container">
-
       <div className="screen">
-
         <div className="screen__content">
           <img src={img} alt="img-logo" style={{ height: "100px" }} />
-          <form className="login" onSubmit={handleForm}>
+          <form className="login" onSubmit={handleLogin}>
             <div className="login__field">
               <i className="login__icon fas fa-user"></i>
-              <input type="text"className="login__input" placeholder="User name" name="user" onChange={(e) => setFormdata({ ...formdata, user: e.target.value })} />
+              <input
+                type="text"
+                className="login__input"
+                placeholder="User name"
+                name="user"
+                onChange={(e) =>
+                  setFormdata({ ...formdata, username: e.target.value })
+                }
+              />
             </div>
             <div className="login__field">
               <i className="login__icon fas fa-lock"></i>
-              <input type="password" className="login__input" placeholder="Password" name="password" onChange={(e) => setFormdata({ ...formdata, password: e.target.value })}/>
+              <input
+                type="password"
+                className="login__input"
+                placeholder="Password"
+                name="password"
+                onChange={(e) =>
+                  setFormdata({ ...formdata, password: e.target.value })
+                }
+              />
             </div>
             <button className="button login__submit">
-              <span className="button__text">Log In Now</span>
+              <span className="button__text">{loading ? 'Please wait' : 'Log In Now'}</span>
               <i className="button__icon fas fa-chevron-right"></i>
             </button>
           </form>
