@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { PageSytles } from "../../styles/globalStyles";
-import {AddCircleSharp } from "@material-ui/icons";
+import { AddCircleSharp } from "@material-ui/icons";
 import Indicator from "./Indicator";
 
 const Container = styled.div`
@@ -24,7 +24,7 @@ const IndicatorList = () => {
                     </div>
 
                     <div className="topRight">
-                        <button style={{ marginRight: "8px", margin: "10px" }} className="btn btn float-lg-end"  onClick={toggleForm}>
+                        <button style={{ marginRight: "8px", margin: "10px" }} className="btn btn float-lg-end" onClick={toggleForm}>
                             <AddCircleSharp />
                         </button>
                     </div>

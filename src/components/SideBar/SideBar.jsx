@@ -47,8 +47,9 @@ const SideBar = () => {
         <NavLink to="/education-list" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Educations</NavLink>
         <NavLink to="/medi-tech-list" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Medication And Technologies</NavLink>
         <NavLink to="/africa-palliative-list" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>A functional African palliative care research network in place</NavLink>
-        {/* <NavLink to="/product" style={{ margin: "10px" }}>Product</NavLink>
-        <NavLink to="/settings" style={{ margin: "10px" }}>Settings</NavLink> */}
+        <NavLink to="/knowledge-care-list" style={{ margin: "10px" }}>Improved skills and knowledge of palliative care research in Africa</NavLink> 
+        <NavLink to="/agenda-pc" style={{ margin: "10px" }}>Agenda For PC</NavLink>
+        <NavLink to="/web-based-pc" style={{ margin: "10px" }}>A functional web based PC clearing house</NavLink>
         <NavLink to="/login" style={{ margin: "10px" }}>Logout</NavLink>
 
       </Container>

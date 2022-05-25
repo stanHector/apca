@@ -2,24 +2,25 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { PageSytles } from "../../styles/globalStyles";
 import { AddCircleSharp } from "@material-ui/icons";
-import MedicationTechnologies from "./MedicationTechnologies"
+import AgendaForPC from "./AgendaForPC";
 
 const Container = styled.div`
   ${PageSytles}
 `;
 
-const MedicationTechnologiesList = () => {
-    const [showMedicTech, setShowMedicTech] = useState(false);
+const AgendaForPCList = () => {
+    const [showPcForm, setShowPcForm] = useState(false);
 
     const toggleForm = () => {
-        setShowMedicTech(!showMedicTech);
+        setShowPcForm(!showPcForm);
     }
+
     return <Container>
         <React.Fragment>
-            <div style={{ marginBottom: "20px" }}>
+            <div>
                 <div className="top">
                     <div style={{ marginTop: "20px" }} >
-                        <span className="logs" style={{ fontWeight: "bold", marginLeft: "20px" }}>Medication And Technologies</span>
+                        <span className="logs" style={{ fontWeight: "bold", marginLeft: "20px" }}>Agenda for PC</span>
                     </div>
 
                     <div className="topRight">
@@ -28,7 +29,7 @@ const MedicationTechnologiesList = () => {
                         </button>
                     </div>
                 </div>
-                {!showMedicTech ? (
+                {!showPcForm ? (
                     <div className="col-lg-12 mx-auto">
                         <div className="card mt-2 mx-auto p-4 bg-light">
                             <table className="table table-striped table-bordered">
@@ -36,7 +37,7 @@ const MedicationTechnologiesList = () => {
                                     <tr>
                                         <th>No.</th>
                                         <th>FYPeriod</th>
-                                        <th>MEDICATIONTECHNOLOGIES</th>
+                                        <th>AGENDA FOR PC</th>
                                         <th>APR-JUN</th>
                                         <th>JUL-SEP</th>
                                         <th>OCT-DEC</th>
@@ -55,29 +56,28 @@ const MedicationTechnologiesList = () => {
                                 </thead>
                                 <tbody style={{ textAlign: "center", fontSize: "11px" }}>
                                     {/* {assets.length === 0 ?
-                      <tr align="center"><td colSpan="20">No Record Found</td></tr> :
-                      data?.map((asset, index) => (
-                          <tr key={asset?.id}>
-                              <td>
-                                  {(recordPerPage * (currentPage - 1)) + index + 1}</td>
-                              <td>{asset.description}</td>
-                              <td>{asset.assetId}</td>
-                              <td>{asset.manufacturer}</td>
-                              <td>{asset.modelNumber}</td>
-                              <td>{asset.serialNumber}</td>
-                            
-                              <td>{asset.project}</td>
-                              <td>{asset.condition}</td>
-                              <td>{asset.states}</td>
-                              <td>{asset.facility}</td>
-                              <td>{asset.location}</td>
-                              <td>{asset.assignee}</td>
-                              <td>{asset.email}</td>
-                              <td>{asset.status}</td>
-                              <td className="text-center"><Navigate to={`/update-asset/${asset.id}`} className="edit">Edict</Navigate></td>
-                              <td className="text-center" style={{ paddingLeft: "20px" }}><i onClick={() => this.deleteAsset(asset.id)} className="fa fa-trash" style={{ color: "red" }} ><Delete /> </i></td>
-                              <td className="text-center" style={{ paddingLeft: "20px" }}><Link to={`/view-asset/${asset.id}`} className="view" style={{ alignItem: "center", color: "green" }}> <Visibility /></Link> </td>
-                          </tr>
+                                            <tr align="center"><td colSpan="20">No Record Found</td></tr> :
+                                            data?.map((asset, index) => (
+                                                <tr key={asset?.id}>
+                                                    <td>
+                                                        {(recordPerPage * (currentPage - 1)) + index + 1}</td>
+                                                    <td>{asset.description}</td>
+                                                    <td>{asset.assetId}</td>
+                                                    <td>{asset.manufacturer}</td>
+                                                    <td>{asset.modelNumber}</td>
+                                                    <td>{asset.serialNumber}</td>
+                                                    <td>{asset.project}</td>
+                                                    <td>{asset.condition}</td>
+                                                    <td>{asset.states}</td>
+                                                    <td>{asset.facility}</td>
+                                                    <td>{asset.location}</td>
+                                                    <td>{asset.assignee}</td>
+                                                    <td>{asset.email}</td>
+                                                    <td>{asset.status}</td>
+                                                    <td className="text-center"><Navigate to={`/update-asset/${asset.id}`} className="edit">Edict</Navigate></td>
+                                                    <td className="text-center" style={{ paddingLeft: "20px" }}><i onClick={() => this.deleteAsset(asset.id)} className="fa fa-trash" style={{ color: "red" }} ><Delete /> </i></td>
+                                                    <td className="text-center" style={{ paddingLeft: "20px" }}><Link to={`/view-asset/${asset.id}`} className="view" style={{ alignItem: "center", color: "green" }}> <Visibility /></Link> </td>
+                                                </tr>
                       ))} */}
                                 </tbody>
                             </table>
@@ -90,15 +90,15 @@ const MedicationTechnologiesList = () => {
                                     <nav aria-label="Page navigation example">
                                         {/* <ul className="pagination"> */}
                                         {/* <li className="page-item"><a type="button" className="page-link" disabled={currentPage === 1 ? true : false} onClick={this.showPrevPage}>Previous</a></li>
-                          <li className="page-item"><a type="button" className="page-link" disabled={currentPage === 1 ? true : false} onClick={this.showFirstPage}>First</a></li>
-                          <li className="page-item"><a type="button" className="page-link" disabled={currentPage === totalPages ? true : false} onClick={this.showNextPage}>Next</a></li>
-                          <li className="page-item"><a type="button" className="page-link" disabled={currentPage === totalPages ? true : false} onClick={this.showLastPage}>Last</a></li> */}
+                                        <li className="page-item"><a type="button" className="page-link" disabled={currentPage === 1 ? true : false} onClick={this.showFirstPage}>First</a></li>
+                                        <li className="page-item"><a type="button" className="page-link" disabled={currentPage === totalPages ? true : false} onClick={this.showNextPage}>Next</a></li>
+                                        <li className="page-item"><a type="button" className="page-link" disabled={currentPage === totalPages ? true : false} onClick={this.showLastPage}>Last</a></li> */}
                                         {/* </ul> */}
                                     </nav>
                                 </div>
                             </table>
                         </div>
-                    </div>) : (<MedicationTechnologies />)
+                    </div>) : (<AgendaForPC />)
                 }
             </div>
         </React.Fragment>
@@ -106,4 +106,4 @@ const MedicationTechnologiesList = () => {
     </Container>
 };
 
-export default MedicationTechnologiesList;
+export default AgendaForPCList;

@@ -11,12 +11,11 @@ const AfricanPalliativeCare = () => {
     <Container>
       <div>
         <div className="container">
-
           <div className="row ">
-            <div className=" text-center mt-5 ">
+            {/* <div className=" text-center mt-5 ">
               <h1>A functional African palliative care research network in place</h1>
-            </div>
-            <div className="col-lg-8 mx-auto">
+            </div> */}
+            <div className="col-lg-9 mx-auto">
               <div className="card mt-2 mx-auto p-4 bg-light">
                 <div className="card-body bg-light">
                   <div className="container">

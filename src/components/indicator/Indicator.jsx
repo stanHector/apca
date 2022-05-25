@@ -11,9 +11,9 @@ const Indicator = () => {
     <div style={{marginBottom:"20px"}}>
       <div className="container">
         <div className="row ">
-          <div className=" text-center mt-5 ">
+          {/* <div className=" text-center mt-5 ">
             <h1>Indicator</h1>
-          </div>
+          </div> */}
 
           <div className="col-lg-9 mx-auto">
             <div className="card mx-auto p-4 bg-light">

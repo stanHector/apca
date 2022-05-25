@@ -6,7 +6,7 @@ const Container = styled.div`
   ${PageSytles}
 `;
 
-const Education = () => {
+const KnowledgePalliativeCare = () => {
   return <Container>  <div>
 
     <div className="container">
@@ -34,17 +34,15 @@ const Education = () => {
 
                     <div className="col-sd-12">
                       <div className="form-group">
-                        <label style={{ fontWeight: "bold" }}>Education</label>
+                        <label style={{ fontWeight: "bold" }}>Knowledge For Palliative Care</label>
                         <select name="need" className="form-control" required="required" data-error="">
-                          <option value="" selected disabled>--Select Education--</option>
-                          <option>Number of countries that developed specialist PC training programs during this period</option>
-                          <option>Number of countries  that developed a national PC training package during this period</option>
-                          <option>Number of institutions/organizations provided with PC training materials, resources and equipment</option>
-                          <option>Number of care providers who received  pre-service PC training</option>
-                          <option>Number of care providers who successfully completed an in-service basic PC training programme</option>
-                          <option>Number of care providers supported to have specialist PC skills</option>
-                          <option>Number of care providers and educators supported to have PC training skills (ToT)</option>
-                          <option>Number of community volunteers who successfully completed a PC training programme</option>
+                          <option value="" selected disabled>--Knowledge For Palliative Care--</option>
+                          <option>Number of institutions supported on skills and knowledge in PC research during this period</option>
+                          <option>Number of individuals supported on skills and knowledge in PC research during this period</option>
+                          <option>Number of guidelines developed for PC research curricula during this period </option>
+                          <option>Number of PC research guidelines disseminated during this period</option>
+                          <option>Number of PhD students supported for training and mentored for and on PC during this period </option>
+                          <option>Number of senior PC researchers that are active in the regional hubs in Africa </option>
                         </select>
                       </div>
                     </div>
@@ -95,9 +93,8 @@ const Education = () => {
                         <label style={{ fontWeight: "bold" }}>Remarks</label>
                         <select name="need" className="form-control" required="required" data-error="">
                           <option value="" selected disabled>--Select Remarks--</option>
-                          <option>Nurses and social workers</option>
-                          <option>Include community and facility-based staff</option>
-                          <option>This includes 88 Palliative Care Ambassadors</option>
+                          <option>Uganda Cancer Institute, Uganda Martyrs University</option>
+                          <option>Bereavement, spirituality, outcome measures</option>
                         </select>
                       </div>
                     </div>
@@ -329,4 +326,4 @@ const Education = () => {
   </Container>;
 };
 
-export default Education;
+export default KnowledgePalliativeCare;

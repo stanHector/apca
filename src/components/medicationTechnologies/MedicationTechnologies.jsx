@@ -12,11 +12,10 @@ const MedicationTechnologies = () => {
     <Container>
       <div>
         <div className="container">
-
           <div className="row ">
-            <div className=" text-center mt-5 ">
+            {/* <div className=" text-center mt-5 ">
               <h1>Medication And Technologies</h1>
-            </div>
+            </div> */}
             <div className="col-lg-9 mx-auto">
               <div className="card mt-2 mx-auto p-4 bg-light">
                 <div className="card-body bg-light">
