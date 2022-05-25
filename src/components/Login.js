@@ -25,7 +25,7 @@ const App = ({ setUser }) => {
     .unwrap()
     .then(() => {
       navigate("/");
-      // window.location.reload();
+      window.location.reload();
     })
     .catch(() => {
       setLoading(false);
