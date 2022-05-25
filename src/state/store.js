@@ -6,8 +6,8 @@ import { configureStore } from '@reduxjs/toolkit';
 // import { createBrowserHistory } from 'history';
 // import { routerMiddleware } from 'connected-react-router';
 // import { createRootReducer } from './rootReducer';
-import CountReducer from './reducers/CountReducer';
-
+import authReducer from "./slice/authSlice";
+import messageReducer from "./slice/messageSlice";
 
 
 export const store = configureStore({
@@ -21,7 +21,9 @@ export const store = configureStore({
         // notification: notificationReducer,
         // message: messageReducer,
         // chat: chatReducer,
-        count: CountReducer,
+        auth: authReducer,
+        message: messageReducer,
+        devTools: true
     }
 });
 

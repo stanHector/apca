@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, } from "react-router-dom";
 import {
   Login,
   Layout,
@@ -30,7 +30,7 @@ import {
 
 function App() {
   const [user, setUser] = useState({});
-  const [location, setLocation] = useState(useLocation());
+  
 
   console.log(user)
   return (
