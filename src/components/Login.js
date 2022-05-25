@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate, Navigate } from "react-router-dom";
 import img from "../assets/logo.jpg";
 import "../App.css";
 import { login } from "../state/slice/authSlice";
+import { clearMessage } from "../state/slice/messageSlice";
 
 const App = ({ setUser }) => {
   const [formdata, setFormdata] = useState({ username: "", password: "" });
@@ -13,6 +14,8 @@ const App = ({ setUser }) => {
   const dispatch = useDispatch();
 
   const navigate = useNavigate();
+
+
 
   const handleLogin = (e) => {
   e.preventDefault();
@@ -26,13 +29,20 @@ const App = ({ setUser }) => {
     })
     .catch(() => {
       setLoading(false);
-      alert(message);
+      
     });
   };
+
+  useEffect(() => {
+    if (message === "Request failed with status code 401") {
+      alert("Invalid username or password");
+    } 
+    return () => {
+      dispatch(clearMessage())
+    };
+  }, [message, dispatch]);
   
-  if (isLoggedIn) {
-    return <Navigate to="/" />;
-  }
+  
 
   // const handleForm = (e) => {
   //   e.preventDefault();
