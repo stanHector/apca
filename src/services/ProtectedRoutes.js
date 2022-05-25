@@ -1,12 +1,13 @@
-import React from 'react'
+import React from "react";
 import { Navigate } from "react-router-dom";
 
-const ProtectedRoutes = ({ children,   isLoggedIn }) => {
-  
-    if (!isLoggedIn) {
-      return <Navigate to="/login" />;
-    }
-  return children
-}
+const ProtectedRoutes = ({ children, isLoggedIn }) => {
+  console.log(isLoggedIn);
 
-export default ProtectedRoutes
+  if (isLoggedIn) {
+    return children;
+  }
+  return <Navigate to="/login" />;
+};
+
+export default ProtectedRoutes;
