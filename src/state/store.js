@@ -8,6 +8,7 @@ import { configureStore } from '@reduxjs/toolkit';
 // import { createRootReducer } from './rootReducer';
 import authReducer from "./slice/authSlice";
 import messageReducer from "./slice/messageSlice";
+import aggregationReducer from "./slice/aggregation";
 
 
 export const store = configureStore({
@@ -23,6 +24,7 @@ export const store = configureStore({
         // chat: chatReducer,
         auth: authReducer,
         message: messageReducer,
+        aggregation: aggregationReducer,
         devTools: true
     }
 });
