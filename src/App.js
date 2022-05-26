@@ -23,7 +23,8 @@ import {
   AgendaForPC,
   AgendaForPCList,
   WebBasePCCLearningHouse,
-  WebBasePCCLearningHouseList
+  WebBasePCCLearningHouseList,
+  DataDemandInformationUseList
 
 } from "./export";
 
@@ -32,14 +33,14 @@ import {
 function App() {
   const { isLoggedIn } = useSelector((state) => state.auth);
 
-  
 
-  
+
+
   return (
     <div className="App">
       {/* <TopNav /> */}
       <Routes>
-        <Route path="login" element={<Login  />} />
+        <Route path="login" element={<Login />} />
         <Route
           path="/"
           element={
@@ -64,14 +65,18 @@ function App() {
             element={<AfricanPalliativeCareList />}
           />
           <Route path="/indicator-list" element={<IndicatorList />} />
-          <Route path="/agenda-pc" element={<AgendaForPCList />} />
+          <Route path="/agenda-pc-list" element={<AgendaForPCList />} />
           <Route
             path="/knowledge-care-list"
             element={<KnowledgePalliativeCareList />}
           />
           <Route
-            path="web-based-pc"
+            path="web-based-pc-list"
             element={<WebBasePCCLearningHouseList />}
+          />
+           <Route
+            path="data-demand-list"
+            element={<DataDemandInformationUseList />}
           />
           <Route path="*" element={<h1>Not found</h1>} />
         </Route>

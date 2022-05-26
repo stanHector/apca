@@ -1,4 +1,4 @@
-import { Label } from "@material-ui/icons";
+
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
@@ -38,7 +38,7 @@ const SideBar = () => {
   return (
     <React.Fragment>
       <Container>
-        <label style={{ fontWeight: "bold", marginTop: "12px", marginLeft: "10px", textDecoration: "underline", color: "#694977", fontSize: "35px", alignItems:"center"}}>Dashboard</label>
+        <label style={{ fontWeight: "bold", marginTop: "12px", marginLeft: "10px", textDecoration: "underline", color: "#694977", fontSize: "35px", alignItems: "center" }}>Dashboard</label>
 
         <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Home</NavLink>
         <NavLink to="/indicator-list" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Indicators</NavLink>
@@ -47,9 +47,15 @@ const SideBar = () => {
         <NavLink to="/education-list" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Educations</NavLink>
         <NavLink to="/medi-tech-list" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Medication And Technologies</NavLink>
         <NavLink to="/africa-palliative-list" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>A functional African palliative care research network in place</NavLink>
-        <NavLink to="/knowledge-care-list" style={{ margin: "10px" }}>Improved skills and knowledge of palliative care research in Africa</NavLink> 
-        <NavLink to="/agenda-pc" style={{ margin: "10px" }}>Agenda For PC</NavLink>
-        <NavLink to="/web-based-pc" style={{ margin: "10px" }}>A functional web based PC clearing house</NavLink>
+        <NavLink to="/knowledge-care-list" style={{ margin: "10px" }}>Improved skills and knowledge of palliative care research in Africa</NavLink>
+        <NavLink to="/agenda-pc-list" style={{ margin: "10px" }}>Agenda For PC</NavLink>
+        <NavLink to="/web-based-pc-list" style={{ margin: "10px" }}>A functional web based PC clearing house</NavLink>
+        <NavLink to="/data-demand-list" style={{ margin: "10px" }}>Data demand and information use</NavLink>
+        {/* <NavLink to="/data-demand-list" style={{ margin: "10px" }}>A functional web based PC clearing house</NavLink> */}
+
+
+
+
         <NavLink to="/login" style={{ margin: "10px" }}>Logout</NavLink>
 
       </Container>
