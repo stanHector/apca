@@ -1,4 +1,4 @@
-import { Label } from "@material-ui/icons";
+
 import React from "react";
 import { useDispatch } from "react-redux";
 import { NavLink } from "react-router-dom";
@@ -40,6 +40,27 @@ const SideBar = () => {
   return (
     <React.Fragment>
       <Container>
+<<<<<<< HEAD
+        <label style={{ fontWeight: "bold", marginTop: "12px", marginLeft: "10px", textDecoration: "underline", color: "#694977", fontSize: "35px", alignItems: "center" }}>Dashboard</label>
+
+        <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Home</NavLink>
+        <NavLink to="/indicator-list" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Indicators</NavLink>
+        <NavLink to="/service-list" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Service Deliveries</NavLink>
+        <NavLink to="/policy-list" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Policy</NavLink>
+        <NavLink to="/education-list" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Educations</NavLink>
+        <NavLink to="/medi-tech-list" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Medication And Technologies</NavLink>
+        <NavLink to="/africa-palliative-list" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>A functional African palliative care research network in place</NavLink>
+        <NavLink to="/knowledge-care-list" style={{ margin: "10px" }}>Improved skills and knowledge of palliative care research in Africa</NavLink>
+        <NavLink to="/agenda-pc-list" style={{ margin: "10px" }}>Agenda For PC</NavLink>
+        <NavLink to="/web-based-pc-list" style={{ margin: "10px" }}>A functional web based PC clearing house</NavLink>
+        <NavLink to="/data-demand-list" style={{ margin: "10px" }}>Data demand and information use</NavLink>
+        {/* <NavLink to="/data-demand-list" style={{ margin: "10px" }}>A functional web based PC clearing house</NavLink> */}
+
+
+
+
+        <NavLink to="/login" style={{ margin: "10px" }}>Logout</NavLink>
+=======
         <label
           style={{
             fontWeight: "bold",
@@ -53,6 +74,7 @@ const SideBar = () => {
         >
           Dashboard
         </label>
+>>>>>>> victor
 
         <NavLink
           to="/"
