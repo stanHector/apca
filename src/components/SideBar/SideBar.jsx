@@ -40,7 +40,7 @@ const SideBar = () => {
   return (
     <React.Fragment>
       <Container>
-<<<<<<< HEAD
+
         <label style={{ fontWeight: "bold", marginTop: "12px", marginLeft: "10px", textDecoration: "underline", color: "#694977", fontSize: "35px", alignItems: "center" }}>Dashboard</label>
 
         <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")} style={{ margin: "10px" }}>Home</NavLink>
@@ -57,26 +57,9 @@ const SideBar = () => {
         {/* <NavLink to="/data-demand-list" style={{ margin: "10px" }}>A functional web based PC clearing house</NavLink> */}
 
 
-
-
         <NavLink to="/login" style={{ margin: "10px" }}>Logout</NavLink>
-=======
-        <label
-          style={{
-            fontWeight: "bold",
-            marginTop: "12px",
-            marginLeft: "10px",
-            textDecoration: "underline",
-            color: "#694977",
-            fontSize: "35px",
-            alignItems: "center",
-          }}
-        >
-          Dashboard
-        </label>
->>>>>>> victor
 
-        <NavLink
+        {/* <NavLink
           to="/"
           className={({ isActive }) => (isActive ? "active" : "")}
           style={{ margin: "10px" }}
@@ -140,7 +123,7 @@ const SideBar = () => {
           onClick={() => dispatch(logout())}
         >
           Lo gout
-        </NavLink>
+        </NavLink> */}
       </Container>
       {/* </div> */}
     </React.Fragment>
